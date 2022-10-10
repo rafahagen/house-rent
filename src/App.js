@@ -1,18 +1,28 @@
-
-import { useEffect } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './component/About/About';
+import Contact from './component/Contact/Contact';
+import Course from './component/Course/Course';
+import Footer from './component/Footer/Footer';
+import Home from './component/Home/Home';
 import Navbar from './component/Navbar/Navbar';
+import NotFound from './component/NotFound/NotFound';
 
 function App() {
-  const url = "https://raw.githubusercontent.com/mostakshahariyar/crouse_data/main/crouse.JSON"
-  useEffect(() => {
-    fetch(url)
-      .then(res => res.json())
-      .then(data => console.log(data))
-  }, [])
+
   return (
-    <div className="App">
+    <BrowserRouter>
       <Navbar />
-    </div>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/crouse' element={<Course />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

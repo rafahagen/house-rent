@@ -1,5 +1,16 @@
 @tailwind base;
 @tailwind components;
+
+.btn {
+  border: none;
+  background-color: rgba(218, 92, 218, 0.689);
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin: 5px 0;
+}
+
 @tailwind utilities;
 
 body {
