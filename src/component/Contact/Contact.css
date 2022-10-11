@@ -1,0 +1,7 @@
+.contact-image {
+    background-image: url(../../image/page/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}

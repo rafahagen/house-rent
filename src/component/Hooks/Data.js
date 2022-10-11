@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 
-const Crouse = () => {
+const useCrouses = () => {
     const [crouses, setCrouses] = useState([]);
-
-    const url = "https://raw.githubusercontent.com/mostakshahariyar/crouse_data/main/crouse.JSON"
     useEffect(() => {
-        fetch(url)
+        fetch('https://raw.githubusercontent.com/mostakshahariyar/crouse_data/main/crouse.JSON')
             .then(res => res.json())
             .then(data => setCrouses(data))
     }, [])
+    // console.log(crouses)
     return [crouses];
 }
 
-export default Crouse;
+export default useCrouses;
