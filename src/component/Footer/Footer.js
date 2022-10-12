@@ -7,11 +7,11 @@ import instragram from './../../image/icon/icons8-instagram-50.svg'
 
 const Footer = () => {
     return (
-        <div className='bg-slate-400'>
+        <div>
             <div className='flex justify-center items-center pt-2 '>
-                <a href="https://www.bdjobs.com/" className="shrink-0 h-16 w-32 text-xl hover:text-zinc-100	" target="_blank">Jobs</a>
-                <Link className="shrink-0 h-16 w-32 text-xl hover:text-zinc-100" to="/about">About</Link>
-                <Link className="shrink-0 h-16 w-32 text-xl hover:text-zinc-100" to="/contact">Contact</Link>
+                <a href="https://www.bdjobs.com/" className="shrink-0 h-16 w-32 text-xl hover:text-blue-400	" target="_blank">Jobs</a>
+                <Link className="shrink-0 h-16 w-32 text-xl hover:text-blue-100" to="/about">About</Link>
+                <Link className="shrink-0 h-16 w-32 text-xl hover:text-blue-100" to="/contact">Contact</Link>
             </div>
             <div className='flex items-center justify-center'>
                 <a href="https://www.facebook.com/mostak.shahariyar.0823" target="_blank" className="shrink-0 h-16 w-32 text-xl">
