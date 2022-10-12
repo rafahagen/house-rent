@@ -6,9 +6,9 @@ const Contact = () => {
     return (
         <div>
             <div className="contact-image">
-                <div className=' ml-8 backdrop-blur-sm'>
+                <div className=' md:ml-8 ml-2 backdrop-blur-sm'>
                     <h1 className='text-white text-5xl font-bold'>Get in touch</h1>
-                    <p className='text-white text-xl font-mono w-1/2 mt-6'>If you have and problem contact us. Or if you have any quary touch us or sent email. Thank you very much.</p>
+                    <p className='text-white text-xl font-mono p-2 md:w-1/2 mt-6'>If you have and problem contact us. Or if you have any quary touch us or sent email. Thank you very much.</p>
                 </div>
             </div>
             {/* address section */}
