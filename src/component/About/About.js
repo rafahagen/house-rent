@@ -10,14 +10,14 @@ import cat from '../../image/page/cat_2-570x350.jpg';
 const About = () => {
     return (
         <div className='pb-8'>
-            <h1 className='text-5xl text-center	mt-6'>From the Coursera community</h1>
-            <p className='text-center text-3xl'>107+ million people are already learning on Coursera</p>
+            <h1 className='xl:text-5xl lg:text-2xl text-center text-3xl	mt-6'>From the Coursera community</h1>
+            <p className='text-center xl:text-3xl text-2xl'>107+ million people are already learning on Coursera</p>
 
             <section>
-                <div className="grid grid-flow-col place-items-center my-16 mx-28">
+                <div className="grid lg:grid-flow-col lg:place-items-center lg:my-16 md:my-8 md:mx-28 mx-[2%]">
                     <div className="row-span-3">
-                        <h1 className='ml-[8%] text-5xl font-thin'>Welcome to Master Study!</h1>
-                        <p className='w-10/12 my-12 text-justify'>Online studies are designed for students whose scheduling commitments would otherwise make it difficult to enroll in a full-time higher education program. Offered for individual courses, diplomas, associate’s degrees and certificate programs, online studies are a valuable option. The resulting qualification a graduate receives after successfully completing.</p>
+                        <h1 className='lg:ml-[8%] lg:text-5xl md:text-4xl text-2xl my-4 mx-[3%] font-thin'>Welcome to Master Study!</h1>
+                        <p className='lg:w-10/12 lg:my-12 lg:text-justify'>Online studies are designed for students whose scheduling commitments would otherwise make it difficult to enroll in a full-time higher education program. Offered for individual courses, diplomas, associate’s degrees and certificate programs, online studies are a valuable option. The resulting qualification a graduate receives after successfully completing.</p>
                         <div>
                             <p className='mb-6'>Unordered & Ordered Lists</p>
                             <div className='flex gap-4'>
@@ -35,15 +35,15 @@ const About = () => {
                         </div>
 
                     </div>
-                    <div className="row-span-3">
+                    <div className="row-span-3 mt-4 md:mt-6">
                         <img src={cat} alt="" />
                     </div>
                 </div>
             </section>
 
             <section>
-                <div className="grid grid-flow-col my-16 mx-28">
-                    <div className="row-span-3">
+                <div className="grid lg:grid-flow-col md:mx-28 lg:place-items-center my-16 lg:mx-28 mx-[2%] gap-x-6">
+                    <div className="row-span-3 md:mb-6">
                         <img src={crouse} alt="" />
                     </div>
                     <div className="row-span-3">
@@ -59,16 +59,29 @@ const About = () => {
 
             {/* certificat */}
             <section>
-                <div className="border bg-red-300 mx-28">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, quidem.
+                <div className="lg:mx-28 md:mx-28 mx-[2%]">
+                    <h1 className='text-5xl font-thin mx-[2%] mb-5'>Certifications</h1>
+                    <div className="lg:flex md:flex-row  lg:gap-x-3 gap-y-4">
+                        <div className=' rounded'>
+                            <img src={certificat} alt="" className='lg:p-4 p-2 rounded bg-orange-300 mb-4	' />
+                        </div>
+                        <div className=' rounded'>
+                            <img src={certificat} alt="" className='lg:p-4 p-2 rounded bg-orange-300 mb-4	' />
+                        </div>
+                        <div className=' rounded'>
+                            <img src={certificat} alt="" className='lg:p-4 p-2 rounded bg-orange-300 mb-4	' />
+                        </div>
+
+
+                    </div>
                 </div>
             </section>
 
-            <hr className='my-4' />
+            <hr className='my-8' />
 
             <div className=' mt-8'>
                 <h1 className='text-3xl text-center my-4'>Our Faculty</h1>
-                <div className="coruse-instractor grid grid-flow-col place-items-center">
+                <div className="coruse-instractor grid lg:grid-flow-col place-items-center">
                     <div className="row-span-3">
                         <img src={R} className='rounded-full h-[250px]' alt="" />
                         <h1 className='text-center text-xl mt-2'>React faculty</h1>

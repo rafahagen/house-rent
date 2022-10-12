@@ -11,7 +11,7 @@ const Crouses = props => {
     return (
 
 
-        <div className="w-[300px] flex flex-col items-center justify-start p-[5px] m-auto my-5 border-4 shadow-white drop-shadow-2xl shadow-2xl hover:bg-white rounded border-double hover:translate-y-1 hover:duration-500 duration-500 ">
+        <div className="w-[300px] flex flex-col items-center justify-start p-[5px] m-auto my-5 border-4 shadow-blue-400 drop-shadow-2xl hover:bg-white rounded border-double hover:translate-y-1 hover:duration-500 duration-500 ">
 
             <div className='image-section '>
                 <img src={img} className="rounded" alt={title} />

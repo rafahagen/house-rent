@@ -5,7 +5,7 @@ import Crouse from '../Crouse/Crouse'
 const Course = () => {
     const [crouses] = useCrouses([]);
     return (
-        <div className='grid grid-cols-3 bg-slate-300'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2'>
             {
                 crouses.map(crouse => <Crouse
                     crouse={crouse}
