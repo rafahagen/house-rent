@@ -6,6 +6,7 @@ import gmail from './../../image/icon/icons8-gmail-logo-50.svg';
 import instragram from './../../image/icon/icons8-instagram-50.png'
 import blog from '../../image/page/blog.jpeg';
 import blog2 from '../../image/page/blog2.jpeg'
+import copyRight from '../../image/icon/copyright.png'
 
 
 const Footer = () => {
@@ -74,6 +75,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="flex items-center justify-center mb-4 text-gray-400">
+                <img src={copyRight} alt="" />
+                <p> 2022 masterstudy education.</p>
             </div>
 
         </div>
