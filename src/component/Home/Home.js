@@ -4,7 +4,7 @@ import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
 
 
 const featuredImages = [
-    "/image/slider.jpg",
+    "/image/slider1.jpg",
     "/image/slider2.jpg",
     "/image/slider3.jpg"
 ];
@@ -12,22 +12,24 @@ let count = 0;
 const Home = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const sliderRef = useRef();
+    const imgId = document.getElementById("slider-img");
     useEffect(() => {
         startSlider();
         sliderRef.current.addEventListener("animationend", removeAnimation);
     }, []);
     const startSlider = () => {
         setInterval(() => {
-            // handleOnNextClick();
+            if (count >= featuredImages.length) {
+                count = 0;
+            }
+            const imageUrl = featuredImages[count];
+            imgId.setAttribute('src', imageUrl);
+            count++;
         }, 3000);
     }
     const removeAnimation = () => {
         sliderRef.current.classList.remove("fade-anim");
     }
-    // setInterval(() => {
-    //     sliderRef.current.addEventListener("animationend", removeAnimation);
-    //     handleOnNextClick();
-    // }, 3000);
 
 
 
@@ -42,12 +44,11 @@ const Home = () => {
         setCurrentIndex(count);
         sliderRef.current.classList.add("fade-anim");
     };
-    // console.log(sliderRef)
     return (
         <div className="max-w-screen-xl m-auto">
             <div ref={sliderRef} className="w-full relative animationend select-none">
                 <div className="aspect-w-16 aspect-h-9">
-                    <img src={featuredImages[currentIndex]} alt="" />
+                    <img id="slider-img" src={featuredImages[currentIndex]} alt="" />
                 </div>
 
                 <div className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-center px-3">
