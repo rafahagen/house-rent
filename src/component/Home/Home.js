@@ -48,7 +48,7 @@ const Home = () => {
         <div className="max-w-screen-xl m-auto">
             <div ref={sliderRef} className="w-full relative animationend select-none">
                 <div className="aspect-w-16 aspect-h-9">
-                    <img id="slider-img" src={featuredImages[currentIndex]} alt="" />
+                    <img id="slider-img" className="w-full" src={featuredImages[currentIndex]} alt="" />
                 </div>
 
                 <div className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-center px-3">
