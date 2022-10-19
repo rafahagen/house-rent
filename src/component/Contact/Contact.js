@@ -75,14 +75,16 @@ const Contact = () => {
 
             {/* notify me */}
             <section className='mb-3'>
-                <div className="grid lg:grid-rows-3 lg:gap-x-30 mt-8 lg:mx-8 mx-6 pl-2 lg:grid-flow-col place-items-center lg:gap-x-40 bg-cyan-800 rounded-3xl lg:p-5 p-3">
+                <div className="grid xl:grid-rows-3 xl:gap-x-30 mt-8 lg:mx-8 mx-6 pl-2 lg:grid-flow-col lg:place-items-center lg:gap-x-40 bg-cyan-800 rounded-3xl lg:p-5 p-3">
                     <div className="lg:row-span-3 mx-auto ml-5">
                         <h1 className='text-white md:text-[30px] text-[20px] w-auto font-semibold'>Sign up for our Newsletter</h1>
                         <p className='text-gray-300 md:text-xl md:w-[450px]'>Get notified about the latest career insights, study tips, and offers at Leverage Edu.</p>
                     </div>
-                    <div className="lg:row-span-3 row-span-2 mx-auto mt-5">
-                        <input type="text" placeholder='Enter your email' className='focus:outline-none focus:ring focus:border-blue-500 p-3.5 rounded' />
-                        <button className='outline-none rounded ml-0 mt-2 xl:mt-0 bg-green-500 p-3 md:ml-3 text-white text-xl'>Notify me</button>
+                    <div className="xl:row-span-3 mt-5 ml-5 xl:mx-auto lg:mt-5 ">
+                        <div className='sm:flex'>
+                            <input type="text" placeholder='Enter your email' className='focus:outline-none focus:ring focus:border-blue-500 mr-3 sm:mr-0 p-3.5 rounded' />
+                            <button className='outline-none rounded mt-3 sm:mt-0  bg-green-500 place-items-center p-3  sm:ml-3 text-white text-xl'>Notify me</button>
+                        </div>
                         <p className='text-gray-300 text-lg'>We are care about the protection of your data. Read our <span className='underline-offset-2'>Privact Policy.</span></p>
                     </div>
                 </div>

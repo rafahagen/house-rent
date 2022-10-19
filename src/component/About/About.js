@@ -21,15 +21,15 @@ const About = () => {
                         <div>
                             <p className='mb-6'>Unordered & Ordered Lists</p>
                             <div className='flex gap-4'>
-                                <img className='w-6' src={like} alt="" />
+                                <img className='w-[20px]' src={like} alt="" />
                                 <p className='text-gray-600 cursor-pointer hover:text-black'>Online Courses with full discount systems.</p>
                             </div>
                             <div className='flex gap-4'>
-                                <img className='w-6' src={like} alt="" />
+                                <img className='w-[20px]' src={like} alt="" />
                                 <p className='text-gray-600 cursor-pointer hover:text-black'>Online Certificates which can be used worldwide.</p>
                             </div>
                             <div className='flex gap-4'>
-                                <img className='w-6' src={like} alt="" />
+                                <img className='w-[20px]' src={like} alt="" />
                                 <p className='text-gray-600 cursor-pointer hover:text-black'>An online leadership development program at Masterstudy LMS.</p>
                             </div>
                         </div>
@@ -64,12 +64,15 @@ const About = () => {
                     <div className="lg:flex md:flex-row  lg:gap-x-3 gap-y-4">
                         <div className=' rounded'>
                             <img src={certificat} alt="" className='lg:p-4 p-2 rounded bg-orange-300 mb-4	' />
+                            <p className='text-center text-2xl font-medium lg:my-0 my-2'>Google</p>
                         </div>
                         <div className=' rounded'>
                             <img src={certificat} alt="" className='lg:p-4 p-2 rounded bg-orange-300 mb-4	' />
+                            <p className='text-center text-2xl font-medium lg:my-0 my-2'>Twiter</p>
                         </div>
                         <div className=' rounded'>
                             <img src={certificat} alt="" className='lg:p-4 p-2 rounded bg-orange-300 mb-4	' />
+                            <p className='text-center text-2xl font-medium lg:my-0 my-2'>Amazon</p>
                         </div>
 
 
