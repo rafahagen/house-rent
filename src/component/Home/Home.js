@@ -47,7 +47,7 @@ const Home = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            <CourseList crouses={crouses.slice(0, 3)} />
+            <CourseList crouses={crouses.slice(0, 4)} />
         </div>
     );
 };
